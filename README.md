@@ -1,2 +1,1 @@
-# kimtienvu.github.io
-This is the repository for my Github User Page!
+#Kim's User Page
