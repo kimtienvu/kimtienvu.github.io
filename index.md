@@ -1,5 +1,5 @@
 # About Me: Kim Tien Vu
-[Me.png](images/kim.png)
+![Me.png](images/kim.png)
 
 | Programming Language  | Print "Hello World" |
 | ------------- | ------------- |
@@ -25,17 +25,20 @@ I like to spend my free time doing:
 1. Listening to Broadway Musicals ~~and attempting to sing them~~
 2. Cooking *and eating* food!
 3. Hackathons (Some of my favorite ones are below):
-   - [Girls in Tech San Diego Hacking for Humanity 2019] (https://devpost.com/software/govet-xnw3fy)
+   - [Girls in Tech San Diego Hacking for Humanity 2019](https://devpost.com/software/govet-xnw3fy)
    - [HackXX 2019](https://devpost.com/software/food-selected-for-you)
    
 I've only won 1 hackathon but like Thomas Edison says:
 > I haven't failed, I've just found 10,000 ways that won't work
 
 I also play video games but the ones I want to play that I have yet to get are:
-- [] Little Nightmares 2
-- [] The Last of Us Part 2
-- [] Ark
-- [] Cyberpunk 2077
+- [ ] Little Nightmares 2
+- [ ] The Last of Us Part 2
+- [ ] Ark
+- [ ] Cyberpunk 2077
+
+![Little Nightmares 2](https://en.wikipedia.org/wiki/Little_Nightmares_2#/media/File:Little_Nightmares_Cover_Art.jpg)
+Image from Wikipedia
 
 ## [Volunteer Work](#volunteer-work)
 Some extracurricular activities of mine include:
