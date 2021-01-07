@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+# About Me: Kim Tien Vu
+[Me.png](images/kim.png)
 
-You can use the [editor on GitHub](https://github.com/kimtienvu/kimtienvu.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+| Programming Language  | Print "Hello World" |
+| ------------- | ------------- |
+| Java  | `System.out.println("Hello World!");`  |
+| Python  | `print "Hello World"` |
+| C++ | `std::cout << "Hello, world!";` |
+| Bash | `echo "Hello World"` | 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Hello World!** I am currently an undergraduate student at UCSD studying Computer Science.
 
-### Markdown
+## [Courses Taken](#courses-taken)
+Some courses I've taken that interest me include:
+- Object-Oriented Programming **with Java** 
+- Algorithm Design
+- Data Structures
+- Database System Principles
+- Computer Architecture
+- Computer Vision
+- Teaching Computational Thinking For Everyone
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## [Hobbies](#hobbies)
+I like to spend my free time doing:
+1. Listening to Broadway Musicals ~~and attempting to sing them~~
+2. Cooking *and eating* food!
+3. Hackathons (Some of my favorite ones are below):
+   - [Girls in Tech San Diego Hacking for Humanity 2019] (https://devpost.com/software/govet-xnw3fy)
+   - [HackXX 2019](https://devpost.com/software/food-selected-for-you)
+   
+I've only won 1 hackathon but like Thomas Edison says:
+> I haven't failed, I've just found 10,000 ways that won't work
 
-```markdown
-Syntax highlighted code block
+I also play video games but the ones I want to play that I have yet to get are:
+- [] Little Nightmares 2
+- [] The Last of Us Part 2
+- [] Ark
+- [] Cyberpunk 2077
 
-# Header 1
-## Header 2
-### Header 3
+## [Volunteer Work](#volunteer-work)
+Some extracurricular activities of mine include:
+1. Being a Programming Volunteer at the UCSD Women's Center
+2. Being a UCSD JUMP Program Mentor
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kimtienvu/kimtienvu.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
