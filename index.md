@@ -37,7 +37,7 @@ I also play video games but the ones I want to play that I have yet to get are:
 - [ ] Ark
 - [ ] Cyberpunk 2077
 
-![Little Nightmares 2](https://en.wikipedia.org/wiki/Little_Nightmares_2#/media/File:Little_Nightmares_Cover_Art.jpg)
+![Little Nightmares 2](https://en.wikipedia.org/wiki/File:Little_Nightmares_Cover_Art.jpg)
 Image from Wikipedia
 
 ## [Volunteer Work](#volunteer-work)
