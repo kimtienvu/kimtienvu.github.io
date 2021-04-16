@@ -19,3 +19,9 @@ Photo by picjumbo.com from Pexels
 # Favicon:
 
 https://favicon.io/emoji-favicons/laptop
+
+# Down arrow:
+
+https://iconmonstr.com/arrow-down-circle-thin-svg/
+
+I changed the color to white in the css file
