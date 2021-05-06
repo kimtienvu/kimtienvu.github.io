@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/Lingua/Lingua_Slide.jpg") top center;
   background-size: 60%;
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: #263A4B;
 }
 
 #hero_2 {
@@ -235,10 +235,10 @@ h1, h2, h3, h4, h5, h6 {
   /*margin-top: 1%;*/
   margin-right: 10%;
   margin-left: 12%;
-  background: url("../img/Pomodoro/Screen.PNG") top center;
-  background-size: 40%;
+  background: url("../img/Pomodoro/Pomorrow.png") top center;
+  background-size: 53%;
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: #EFB44C;
 }
 
 #hero:before {
