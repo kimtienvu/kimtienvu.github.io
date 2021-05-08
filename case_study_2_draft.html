@@ -76,35 +76,122 @@
         <div class="section-title">
           <h1>Case Study 2: Pomodoro Timer</h1>
           <h2>Background</h2>
+          <p>We’ve all been interrupted during a workflow at one point in our lives. It’s difficult to regain focus after getting 
+            a text message from a friend or that one notification from your email or favorite social media site. Those small 
+            interruptions add up and you lose precious time. It’s not only time you lose because of distractions but also the 
+            time it takes for you to refocus.<br><br>
+
+            The Pomodoro technique helps you plan out time to deal with those small interruptions and distractions without 
+            taking away from your workflow. It allows you to put a pause on small distractions until you are at an appropriate 
+            place to take a break and refocus your attention on handling that distraction. <br> <br>
+          </p>
+          <hr>
+          <h5>
+            It is often difficult to regain focus after being interrupted with a text message or notification from emails or social 
+            media sites. Office workers need a way to stay productive and complete their tasks while dealing with distractions at an appropriate time
+          </h5>
+          <hr>
         </div>
 
         <div class="section-title">
-          <h2>Planning</h2>
+          <h2>Planning and Development</h2>
+          <p>
+            <b>Architectural Design Records:</b> Running a team requires a certain degree of trust and clarity. We established rules 
+            written in a document stored in our repo that defines what is expected to be on the team and how to address situations 
+            where rules are not followed. <br><br>
+
+            Consensus may be reached via verbal interactions but preservation of these decisions are often lost over time particularly 
+            if team members move on.  To address the erosion of shared understanding of decisions, our team documented key decisions 
+            in the form of Architectural Decision Records (ADRs) which highlight general project plans, approaches, and why specific 
+            design/coding decisions were made. This is all so that major decisions are recorded and understood for current and possibly 
+            future team members to avoid organizational debt.
+
+            <br><br><b>User Centered Thinking:</b> Our team created <i>User Stories</i> and <i>User Personas</i> to understand the needs
+            and thoughts of an ideal user to ensure user centered design.
+            
+            <br><br><b>Comparative Analysis: </b> Before diving into code, our team researched core features of what a Pomodoro Timer should have and 
+            which features we thought would be helpful to implement - like Dark Mode for late night studying or a sound playing when a timer 
+            was done.
+
+            <br><br><b>System Diagrams: </b>We created System diagrams on how our pomodoro timer web application will be decomposed. 
+            We adopted the <i>C4 model</i> which provides a way for our development team to effectively communicate our software architecture
+            at different levels. Level 1 describes the system context or "the bigger picture", level 2 shows how responsibilities are distributed across the system
+            and how each container communicates with each other, and level 3 dives deeper by showing each component in a container and their interactions 
+            with each other to make each component work.
+          
+          </p>
           <img src="assets/img/Pomodoro/SA1.PNG" alt="Wireframe" style="width: 20%;">
           <img src="assets/img/Pomodoro/SA2.PNG" alt="Wireframe" style="width: 40%;">
           <img src="assets/img/Pomodoro/SA3.PNG" alt="Wireframe" style="width: 90%;">
-          <p>Software Architecture Diagram to plan out the flow of the core features</p>
+          <br><br>
+
+          <p><i>System diagrams help plan out the flow of the components that make up our web application.</i></p>
+          <br><br>
+          <p>We then drafted some designs for the Pomodoro Timer:</p>
           <img src="assets/img/Pomodoro/Grayscale.PNG" alt="Wireframe" style="width: 40%;">
-          <img src="assets/img/Pomodoro/Grayscale2.PNG" alt="Wireframe" style="width: 40%;">
-          <p>Planning out the design of the timer in grayscale</p>
+          <img src="assets/img/Pomodoro/Grayscale2.PNG" alt="Wireframe" style="width: 50%;">
+          <br>
+          <p><i>Designs in gray-scale to focus on core features and flow.</i></p><br>
           <img src="assets/img/Pomodoro/DesignLight.PNG" alt="Wireframe" style="width: 40%;">
           <img src="assets/img/Pomodoro/DesignDark.PNG" alt="Wireframe" style="width: 40%;">
+          <p><i>Designs with color in light and dark mode.</i></p><br>
+
+
+          <p><b>The goal: </b> Our team decided that our Pomodoro Timer would be a front-end web application implemented solely in vanilla JavaScript, HTML, and CSS. 
+            The only third-party we used was for style, code quality checks, and automatic unit testing on the Pomodoro Timer’s GitHub page.</p>
+
         </div>
 
         <div class="section-title">
           <h2>Testing</h2>
-          <img src="assets/img/Pomodoro/Help.PNG" alt="Wireframe" style="width: 40%;">
-          <p>Implemented a help tourguide</p>
+          <p>Before any Pomodoro Timer updates could be deployed, the commit would need to pass our pipeline checks that check for code quality, 
+            style enforcement violations, and failing unit tests. <br><br>
+          
+            <img src="assets/img/Pomodoro/Pipeline.PNG" alt="Wireframe" style="width: 100%;">
+            <br> <i>The CI/CD pipeline to guide the development process</i>
+          
+            <br><br><b>Bug Finds: </b>
+            <ul>
+              <li><b>Sound Issues: </b> In manual mode, the sound would play when a session would start instead of when a session would end. This bug 
+                was fixed by using a logic statement in the code to play a sound when a session finished instead of relying on when the CSS style c
+                hanged.</li>
+              <li><b>Dark Mode vs. Light Mode:</b> There was feedback that when a user chooses dark mode and they refresh the page, the page would load on 
+                light mode and then switch to dark mode. This would be problematic if the user decided to use the Pomodoro Timer App in the dark where they 
+                will be blinded by white light for a second before being encompassed by darkness once more. This bug was fixed by automatically loading the 
+                application in dark mode and then switching to light mode if the user’s preference was originally light mode.</li>
+              <li><b>Timer Tick is off by 1 second: </b> There was a bug where the timer would be off by 1 second (If the timer was set for 25 minutes, the alarm 
+                would ring at 0:01 instead of 0:00). Our team decided that if the user chooses a time, to start the timer 1 second earlier so that the 
+                timer would end at 0:00 (if the timer was set for 25 minutes, to change the timer text to 24:59 on start)</li>
+            </ul>
+
+            <b>Feature Update:</b> In our original design, our team decided not to implement a task list feature and focus solely on the timer aspect, however, 
+            from user testing, a few comments we received was that the task list is considered a core feature of a Pomodoro Timer, therefore our team 
+            decided to implement it. Additionally, it was brought to our attention that there should be a guide to show users how to use the different 
+            features on the Pomodoro Timer Web Application.
+          
+          </p>
           <img src="assets/img/Pomodoro/ToDo.PNG" alt="Wireframe" style="width: 40%;">
-          <p>Incorporated a To-Do List</p>
+          <img src="assets/img/Pomodoro/Help.PNG" alt="Wireframe" style="width: 40%;">
+          <p><i>Incorporated a To-Do List and Tour-Guide.</i></p>
+
+          
         </div>
 
         <div class="section-title">
           <h2>Deliverables</h2>
-          <img src="assets/img/Pomodoro/LightMode.PNG" alt="Wireframe" style="width: 40%;">
-          <img src="assets/img/Pomodoro/ShortBreak.PNG" alt="Wireframe" style="width: 40%;">
-          <img src="assets/img/Pomodoro/LongBreak.PNG" alt="Wireframe" style="width: 40%;">
-          <p>Main Screens</p>
+          <img src="assets/img/Pomodoro/LightMode.PNG" alt="Wireframe" style="width: 30%;">
+          <img src="assets/img/Pomodoro/ShortBreak.PNG" alt="Wireframe" style="width: 30%;">
+          <img src="assets/img/Pomodoro/LongBreak.PNG" alt="Wireframe" style="width: 29%;">
+          <p><i>Different Timer Themes</i><br></p>
+          <p><br><b>Reflection/Lessons learned</b> - From this project, I learned a lot about teamwork and communication. Our team was 
+            composed of designers and programmers but one of the most important aspects was bridging the communication gap 
+            between the Design team and the Coding team to make sure everyone understood what the future plans are and what 
+            goals should be accomplished before a certain deadline.</p>
+
+          <br><b>Future Plans: </b>If there was more time, some future features to think about would address more user accessibility. During the project,
+          our team tried to address most of the user accessibility issues as outlined by Google Lighthouse but as you can see below, there
+          can be more improvement:
+          <img src="assets/img/Pomodoro/LightHouse.PNG" alt="Wireframe" style="width: 40%;">
         </div>
 
       </div>
