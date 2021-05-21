@@ -25,3 +25,9 @@ https://favicon.io/emoji-favicons/laptop
 https://iconmonstr.com/arrow-down-circle-thin-svg/
 
 I changed the color to white in the css file
+
+# Video:
+
+By Kim Tien Vu and Will Hsu (COGS 120 UCSD)
+
+Royalty Free Music from Bensound
