@@ -254,3 +254,33 @@
   });
 
 })()
+
+// Code adapted from W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+//var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+var imagesArray = ["SA1","SA2","SA3", "G1", "G2", "L1", "L2", "pipeline", "task", "tour", "work", "short", "long", "lighthouse"];
+var temp = imagesArray[0];
+for (var i = 0; i < imagesArray.length; i++) {
+  temp = imagesArray[i];
+  document.getElementById(temp).onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
