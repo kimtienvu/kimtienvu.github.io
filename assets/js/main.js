@@ -264,7 +264,7 @@ var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
-var imagesArray = ["SA1","SA2","SA3", "G1", "G2", "L1", "L2", "pipeline", "task", "tour", "work", "short", "long", "lighthouse"];
+var imagesArray = ["SA1","SA2","SA3", "G1", "G2", "L1", "L2", "pipeline", "task", "tour", "work", "short", "long", "lighthouse", "GLAcc", "GLPractice", "pwa"];
 var temp = imagesArray[0];
 for (var i = 0; i < imagesArray.length; i++) {
   temp = imagesArray[i];
