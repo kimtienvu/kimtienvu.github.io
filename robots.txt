@@ -3,3 +3,4 @@ Disallow: /assets
 Disallow: *.css$
 Disallow: *.png$
 Disallow: *.js$
+Disallow: *.pdf$
